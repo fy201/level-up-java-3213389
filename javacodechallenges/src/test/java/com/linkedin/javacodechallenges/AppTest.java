@@ -16,15 +16,15 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue(App.isEven(0) );
-        assertTrue(App.isEven(2));
-        assertTrue(App.isEven(40));
+        assertTrue(App.isPasswordComplex("Fatima23") );
+        assertTrue(App.isPasswordComplex("Pa33word"));
+        assertTrue(App.isPasswordComplex("jaVa13"));
     }
     
     @Test
     public void shouldAnswerWithFalse() {
-        assertFalse(App.isEven(1));
-        assertFalse(App.isEven(15));
-        assertFalse(App.isEven(-31));
+        assertFalse(App.isPasswordComplex("1234567"));
+        assertFalse(App.isPasswordComplex("paowrd"));
+        assertFalse(App.isPasswordComplex("AslamUmar"));
     }
 }
